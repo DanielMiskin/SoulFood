@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Soul Food || Home Page</title>
+        <link rel="shortcut icon" type="image/jpg" href="./IMG/favicon.svg"/>
+        <meta content="width=device-width" name="viewport" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" />
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
+
+        <script src="./JS/index-mobile-searchbar.js"></script>
+        <link rel="stylesheet" href="./StyleSheets/index.css">
+    </head>
+    <body>
+        <header>
+            <table class="pc" style="width: 100%;">
+                <tr style="height: 80%;" >
+                    <td>
+                        <form class="search-pc" action="./search.html" method="GET">
+                            <input id="searchbar-pc" type="search" required>
+                            <input id="search-submit-pc" type="submit" value="">
+                        </form>
+                    </td>
+                </tr>
+                <tr>
+                    <th style="width: 25%;">
+                        <img id="logo" src="IMG/Ramen Bowl Logo With Text Gradiant.png">
+                    </th>
+                    <th>
+                        <td style="vertical-align: bottom;">
+                            <ul>
+                                <li><a class="nav" href="about.asp">Socials</a></li>
+                                <li><a class="nav" href="contact.asp">Random Recipie</a></li>
+                                <li><a class="nav" href="news.asp">Sides</a></li>
+                                <li><a class="nav" href="default.asp">Main Courses</a></li>
+                            </ul> 
+                        </td>
+                    </th>
+                </tr>
+            </table>
+            <div class="mobile">
+                <span id="logo-mobile">
+                    <img  src="IMG/Ramen Bowl Logo With Text Gradiant.png">
+                </span>
+                <div class="search-container-mobile">
+                    <form class="searchbar-mobile" action="./search.html" method="GET"> 
+                        <input type="search" placeholder="Search here" name="search" class="searchbar-mobile-input" onkeyup="buttonUp();" required> 
+                        <input type="submit" class="searchbar-mobile-submit" value=""> 
+                        <img src="./IMG/Search Grey.png" class="searchbar-mobile-icon">
+                    </form>
+                </div>
+            </div>
+        </header>
+        <img src="./IMG/Temp Image.svg" style="object-fit: cover; width: 100%; height: 300px;">
+        <h2>Vegan Done Right</h2>
+        <p>Top Recipie</p>
+    </body>
+</html>
